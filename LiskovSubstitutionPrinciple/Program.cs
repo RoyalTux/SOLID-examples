@@ -15,15 +15,15 @@ namespace LiskovSubstitutionPrinciple
             var minorAxis = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Enter the width of the rectangle: ");
-            var breadth = Convert.ToInt32(Console.ReadLine());
+            var width = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Enter the height of the rectangle: ");
-            var length = Convert.ToInt32(Console.ReadLine());
+            var height = Convert.ToInt32(Console.ReadLine());
 
             var areaCalc = new AreaCalc();
 
             var ellipseArea = areaCalc.SetCircleArea(majorAxis, minorAxis);
-            var rectangleArea = areaCalc.SetSquareArea(breadth, length);
+            var rectangleArea = areaCalc.SetSquareArea(width, height);
 
             Console.WriteLine("\n---Results---\n");
             Console.WriteLine($"Ellipse area: {ellipseArea}");
