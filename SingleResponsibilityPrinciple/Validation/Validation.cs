@@ -2,7 +2,7 @@
 
 namespace SingleResponsibilityPrinciple.Validation
 {
-    internal class Validation
+    public class Validation
     {
         private readonly ValidationText _validationText;
         private readonly ValidationEmail _validationEmail;

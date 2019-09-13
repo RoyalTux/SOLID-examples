@@ -53,9 +53,16 @@
     <Compile Include="ValidationEmailUnitTest.cs" />
     <Compile Include="ValidationNumberUnitTest.cs" />
     <Compile Include="ValidationTextUnitTest.cs" />
+    <Compile Include="ValidationUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SingleResponsibilityPrinciple\SingleResponsibilityPrinciple.csproj">
+      <Project>{8cab2f0a-76c9-4fad-9828-6604784d11f3}</Project>
+      <Name>SingleResponsibilityPrinciple</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

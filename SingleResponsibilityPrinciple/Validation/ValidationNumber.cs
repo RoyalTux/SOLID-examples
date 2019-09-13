@@ -2,7 +2,7 @@
 
 namespace SingleResponsibilityPrinciple.Validation
 {
-    class ValidationNumber
+    public class ValidationNumber
     {
         public void Validate(string numberField)
         {

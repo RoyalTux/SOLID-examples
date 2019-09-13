@@ -2,7 +2,7 @@
 
 namespace SingleResponsibilityPrinciple.Validation
 {
-    internal class ValidationEmail
+    public class ValidationEmail
     {
         public void Validate(string emailField)
         {
