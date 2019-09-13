@@ -1,5 +1,5 @@
 ﻿using System;
-using DependencyInversionPrinciple.Class;
+using DependencyInversionPrinciple.Message;
 
 namespace DependencyInversionPrinciple
 {

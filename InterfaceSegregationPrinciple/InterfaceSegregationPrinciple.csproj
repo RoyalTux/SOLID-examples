@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Laptop.cs" />
-    <Compile Include="Class\Products.cs" />
-    <Compile Include="Class\Smartphone.cs" />
-    <Compile Include="Interface\ICellPhone.cs" />
-    <Compile Include="Interface\IPersonalComputer.cs" />
-    <Compile Include="Interface\IProduct.cs" />
+    <Compile Include="Device\Laptop.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="Device\Smartphone.cs" />
+    <Compile Include="DeviceInterface\ICellPhone.cs" />
+    <Compile Include="DeviceInterface\IPersonalComputer.cs" />
+    <Compile Include="DeviceInterface\IProduct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

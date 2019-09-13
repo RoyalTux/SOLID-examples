@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Email.cs" />
-    <Compile Include="Class\Notification.cs" />
-    <Compile Include="Class\Sms.cs" />
-    <Compile Include="Interface\IMessage.cs" />
+    <Compile Include="Message\Email.cs" />
+    <Compile Include="Message\Notification.cs" />
+    <Compile Include="Message\Sms.cs" />
+    <Compile Include="MessageInterface\IMessage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

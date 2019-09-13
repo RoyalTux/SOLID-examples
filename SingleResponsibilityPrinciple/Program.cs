@@ -1,5 +1,5 @@
 ﻿using System;
-using SingleResponsibilityPrinciple.Class;
+using SingleResponsibilityPrinciple.Validation;
 
 namespace SingleResponsibilityPrinciple
 {
@@ -9,7 +9,7 @@ namespace SingleResponsibilityPrinciple
         {
             Console.WriteLine("---Single Responsibility Principle---");
 
-            var validation = new Validation(new ValidationText(), new ValidationEmail(), new ValidationNumber());
+            var validation = new Validation.Validation(new ValidationText(), new ValidationEmail(), new ValidationNumber());
 
             Console.Write("Enter the name: ");
             var name = Console.ReadLine();

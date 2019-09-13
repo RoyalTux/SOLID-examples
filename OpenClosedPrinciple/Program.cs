@@ -1,5 +1,7 @@
 ﻿using System;
-using OpenClosedPrinciple.Class;
+using System.Collections.Generic;
+using OpenClosedPrinciple.Calculator;
+using OpenClosedPrinciple.Model;
 
 namespace OpenClosedPrinciple
 {
@@ -9,44 +11,16 @@ namespace OpenClosedPrinciple
         {
             Console.WriteLine("---Open Close Principle---\n");
 
-            Console.Write("Enter the radius of a circle: ");
-            var radius = Convert.ToInt32(Console.ReadLine());
-
-            var circle = new Circle
+            var devCalculations = new List<BaseSalaryCalculator>
             {
-                Radius = radius,
+                new SeniorDevSalaryCalculator(new DeveloperReport {Id = 1, Name = "Dev1", Level = "Senior developer", HourlyRate = 30.5, WorkingHours = 160 }),
+                new MiddleDevSalaryCalculator(new DeveloperReport {Id = 2, Name = "Dev2", Level = "Junior developer", HourlyRate = 20, WorkingHours = 150 }),
+                new JuniorDevSalaryCalculator(new DeveloperReport {Id = 3, Name = "Dev3", Level = "Senior developer", HourlyRate = 30.5, WorkingHours = 180 }),
             };
 
-            Console.Write("Enter the width of the rectangle: ");
-            var recWidth = Convert.ToInt32(Console.ReadLine());
+            var calculator = new SalaryCalculator(devCalculations);
+            Console.WriteLine($"Sum of all the developer salaries is {calculator.CalculateTotalSalaries()} dollars");
 
-            Console.Write("Enter the height of the rectangle: ");
-            var recHeight = Convert.ToInt32(Console.ReadLine());
-
-            var rectangle = new Rectangle
-            {
-                Width = recWidth,
-                Height = recHeight,
-            };
-
-            Console.Write("Enter the width of the triangle; ");
-            var triWidth = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Enter the height of the triangle: ");
-            var triHeight = Convert.ToInt32(Console.ReadLine());
-
-            var triangle = new Triangle
-            {
-                Width = triWidth,
-                Height = triHeight,
-            };
-
-            var areaCalc = new AreaCalc();
-
-            Console.WriteLine("\n---Results---\n");
-            Console.WriteLine($"Circle area: {areaCalc.Area(circle)}");
-            Console.WriteLine($"Rectangle area: {areaCalc.Area(rectangle)}");
-            Console.WriteLine($"Triangle area: {areaCalc.Area(triangle)}");
         }
     }
 }

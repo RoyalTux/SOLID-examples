@@ -1,5 +1,4 @@
 ﻿using System;
-using InterfaceSegregationPrinciple.Class;
 
 namespace InterfaceSegregationPrinciple
 {
